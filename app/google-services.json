@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "608324963151",
+    "firebase_url": "https://salary-6da60.firebaseio.com",
+    "project_id": "salary-6da60",
+    "storage_bucket": "salary-6da60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608324963151:android:799dba1e892687a979d33a",
+        "android_client_info": {
+          "package_name": "com.example.salary2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608324963151-sio1d2tdmhjm2q2smom6j7m9gl6afrj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpND3uAlY98iSjZ4BPaC3DS_Mbo64ibJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608324963151-sio1d2tdmhjm2q2smom6j7m9gl6afrj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Salary2</string>
+    <string name="date">Date</string>
+    <string name="write_note">write note</string>
+    <string name="save">SAVE</string>
+    <string name="_0">$0</string>
+    <string name="add_transation">Add transation</string>
+    <string name="back">Back</string>
+    <string name="signout">signout</string>
+</resources>
