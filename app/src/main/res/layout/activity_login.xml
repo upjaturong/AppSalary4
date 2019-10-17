@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,12 +12,13 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <LinearLayout
                 android:id="@+id/home_11"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
@@ -26,9 +26,9 @@
                     android:layout_height="70dp"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:text="LOGIN"
+                    android:text="@string/login"
                     android:textColor="#D16219"
-                    android:textSize="50dp"
+                    android:textSize="50sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -36,17 +36,20 @@
                     android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/user"
+                    tools:ignore="ContentDescription" />
 
                 <EditText
                     android:id="@+id/login_email"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="30dp"
                     android:gravity="center"
-                    android:hint="Email"
-                    android:inputType="text" />
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    tools:ignore="TextFields"
+                    android:importantForAutofill="no" />
 
                 <EditText
                     android:id="@+id/login_password"
@@ -55,8 +58,9 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:hint="Password"
-                    android:inputType="textPassword" />
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:importantForAutofill="no" />
 
                 <Button
                     android:id="@+id/login_button"
@@ -65,19 +69,18 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bg2"
-                    android:text="Login"
-                    android:textSize="20dp" />
+                    android:text="@string/login"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/registration"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/bg"
-                    android:text="Register"
-                    android:textSize="20dp" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/registration"
+                 android:text="@string/create_your_account"
+                 android:layout_gravity="center"
+                 android:textSize="20sp"
+                 android:layout_marginTop="15dp"
+                 />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
@@ -85,5 +88,7 @@
     <include
         android:id="@+id/registration_layout"
         layout="@layout/user_registration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:visibility="gone" />
 </RelativeLayout>

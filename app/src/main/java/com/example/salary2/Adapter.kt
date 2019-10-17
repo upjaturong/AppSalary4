@@ -28,7 +28,7 @@ class Adapter (
         var price_total = view.price_total
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderl {
-        var view = LayoutInflater.from(context).inflate(R.layout.daily,parent,false)
+        val view = LayoutInflater.from(context).inflate(R.layout.daily,parent,false)
         return ViewHolderl(view)
     }
     override fun getItemCount(): Int {

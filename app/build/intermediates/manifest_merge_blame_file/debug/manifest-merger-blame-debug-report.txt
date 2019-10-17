@@ -102,32 +102,42 @@
 55-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\a11e31886d9961bfb905b67138c57c8f\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
 56        </service>
 57
-58        <activity
-58-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-59            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-59-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-60            android:exported="false"
-60-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-61            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-61-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-62
-63        <provider
-63-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
-64            android:name="com.google.firebase.provider.FirebaseInitProvider"
-64-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
-65            android:authorities="com.example.salary2.firebaseinitprovider"
-65-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
-66            android:exported="false"
-66-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
-67            android:initOrder="100" />
-67-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
-68
-69        <meta-data
-69-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\36bcfcbbcc671074a48337e3518fd6b9\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
-70            android:name="com.google.android.gms.version"
-70-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\36bcfcbbcc671074a48337e3518fd6b9\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
-71            android:value="@integer/google_play_services_version" />
-71-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\36bcfcbbcc671074a48337e3518fd6b9\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
-72    </application>
-73
-74</manifest>
+58        <meta-data
+58-->[com.firebaseui:firebase-ui-database:2.3.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\d75f2971bd201ef711d88e9277027078\jetified-firebase-ui-database-2.3.0\AndroidManifest.xml:14:9-16:69
+59            android:name="com.google.android.gms.version"
+59-->[com.firebaseui:firebase-ui-database:2.3.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\d75f2971bd201ef711d88e9277027078\jetified-firebase-ui-database-2.3.0\AndroidManifest.xml:15:13-58
+60            android:value="@integer/google_play_services_version" />
+60-->[com.firebaseui:firebase-ui-database:2.3.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\d75f2971bd201ef711d88e9277027078\jetified-firebase-ui-database-2.3.0\AndroidManifest.xml:16:13-66
+61
+62        <activity
+62-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+63            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+63-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+64            android:exported="false"
+64-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+65            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+65-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\62b5fccaf18e70d0b841b723d6b6b69e\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+66
+67        <provider
+67-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+68            android:name="com.google.firebase.provider.FirebaseInitProvider"
+68-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+69            android:authorities="com.example.salary2.firebaseinitprovider"
+69-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+70            android:exported="false"
+70-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+71            android:initOrder="100" />
+71-->[com.google.firebase:firebase-common:16.0.3] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\43695a463e53cba217ea8abc9eb9043a\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+72        <provider
+72-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\c8a8871bc809375115ebb193c51cd74c\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+73            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\c8a8871bc809375115ebb193c51cd74c\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+74            android:authorities="com.example.salary2.lifecycle-process"
+74-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\c8a8871bc809375115ebb193c51cd74c\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+75            android:exported="false"
+75-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\c8a8871bc809375115ebb193c51cd74c\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+76            android:multiprocess="true" />
+76-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\up199\.gradle\caches\transforms-2\files-2.1\c8a8871bc809375115ebb193c51cd74c\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+77    </application>
+78
+79</manifest>

@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
@@ -18,9 +21,9 @@
                 android:layout_height="70dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="REGISTER"
+                android:text="@string/register"
                 android:textColor="#1895D4 "
-                android:textSize="50dp"
+                android:textSize="50sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -28,16 +31,18 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:src="@drawable/img" />
+                android:src="@drawable/img"
+                tools:ignore="ContentDescription" />
 
             <EditText
                 android:id="@+id/name"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
-                android:hint="Username"
+                android:hint="@string/username"
+                android:importantForAutofill="no"
                 android:inputType="text" />
 
             <EditText
@@ -48,7 +53,9 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:hint="Email"
-                android:inputType="text" />
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="HardcodedText,TextFields" />
 
             <EditText
                 android:id="@+id/password_register"
@@ -58,8 +65,9 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:hint="Password"
-                android:inputType="textPassword" />
-
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/save"
@@ -67,10 +75,17 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/buttonbg"
-                android:text="Regiter"
-                android:textSize="20dp" />
+                android:text="@string/register"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Login"
+                android:layout_gravity="center"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

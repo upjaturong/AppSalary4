@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,18 +7,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/sep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
-            android:text="September 2019"
+            android:text="@string/september_2019"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -39,19 +40,17 @@
                 android:id="@+id/pieChart"
                 android:layout_width="179dp"
                 android:layout_height="185dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"></com.github.mikephil.charting.charts.PieChart>
+                android:layout_marginTop="20dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="205dp"
-                android:layout_alignParentBottom="true"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="491dp"
-                android:layout_toEndOf="@+id/pieChart"
-                android:layout_toRightOf="@+id/pieChart"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -59,19 +58,23 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/gray2" />
+                        android:background="@color/gray2"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="อาหาร"
-                        android:textColor="@color/gray2" />
+                        android:text="@string/food"
+                        android:textColor="@color/gray2"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -79,19 +82,23 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/pink" />
+                        android:background="@color/pink"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="ช็อปปิ้ง"
-                        android:textColor="@color/pink" />
+                        android:text="@string/shoppie"
+                        android:textColor="@color/pink"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -99,19 +106,23 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/green" />
+                        android:background="@color/green"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="ค่ารถค่าน้ำมัน"
-                        android:textColor="@color/green" />
+                        android:text="@string/car"
+                        android:textColor="@color/green"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -119,19 +130,23 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/red" />
+                        android:background="@color/red"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="ครอบครัว"
-                        android:textColor="@color/red" />
+                        android:text="@string/family"
+                        android:textColor="@color/red"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -139,19 +154,23 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/blue" />
+                        android:background="@color/blue"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="ค่าโทรศัพท์"
-                        android:textColor="@color/blue" />
+                        android:text="@string/tel"
+                        android:textColor="@color/blue"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -159,19 +178,23 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/sky" />
+                        android:background="@color/sky"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="ค่าเกมส์"
-                        android:textColor="@color/sky" />
+                        android:text="@string/game"
+                        android:textColor="@color/sky"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -179,24 +202,29 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:layout_width="29dp"
                         android:layout_height="match_parent"
-                        android:background="@color/gray3" />
+                        android:background="@color/gray3"
+                        tools:ignore="ContentDescription" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:paddingStart="10dp"
                         android:paddingLeft="10dp"
-                        android:text="ค่าที่พัก"
-                        android:textColor="@color/gray3" />
+                        android:text="@string/room"
+                        android:textColor="@color/gray3"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="2dp"

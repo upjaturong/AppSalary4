@@ -252,12 +252,12 @@
         "source": "D:\\Salary2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
-        "source": "C:\\Users\\up199\\.gradle\\caches\\transforms-2\\files-2.1\\dc4a7ac58c2738189551780d126811c5\\material-1.0.0\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
         "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bg.xml.flat",
         "source": "D:\\Salary2\\app\\src\\main\\res\\drawable-v24\\bg.xml"
+    },
+    {
+        "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_bottom_navigation_item_background.xml.flat",
+        "source": "C:\\Users\\up199\\.gradle\\caches\\transforms-2\\files-2.1\\dc4a7ac58c2738189551780d126811c5\\material-1.0.0\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -1062,6 +1062,10 @@
     {
         "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_img.png.flat",
         "source": "D:\\Salary2\\app\\src\\main\\res\\drawable-v24\\img.png"
+    },
+    {
+        "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg3.xml.flat",
+        "source": "D:\\Salary2\\app\\src\\main\\res\\drawable\\bg3.xml"
     },
     {
         "merged": "D:\\Salary2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",

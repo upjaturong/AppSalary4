@@ -31,6 +31,9 @@ class LoginActivity : AppCompatActivity() {
         login_button.setOnClickListener {
             login()
         }
+        login_register.setOnClickListener {
+            showHome()
+        }
     }
 
     private fun login () {

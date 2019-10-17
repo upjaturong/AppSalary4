@@ -20,13 +20,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
 
                 <ImageView
                     android:layout_width="59dp"
                     android:layout_height="51dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/user"
+                    tools:ignore="ContentDescription" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -40,37 +42,33 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="1dp"
-                        android:text="ยอดรวม"
+                        android:text="@string/total"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp"
+                        android:layout_marginStart="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
-                        android:text=" ฿ 980 "
-                        android:textColor="@color/black" />
+                        android:text="@string/_980"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="10dp" />
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
-
-
-        <ScrollView
-
-            android:layout_width="match_parent"
-            android:layout_height="575dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/gray"
                 android:orientation="vertical">
 
@@ -90,13 +88,14 @@
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:layout_marginStart="15dp">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Overview"
+                                android:text="@string/overview"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 
@@ -105,8 +104,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="5dp"
                                 android:layout_marginLeft="15dp"
-                                android:text="Tap to view full report"
-                                android:textSize="15sp" />
+                                android:text="@string/tap_to_view_full_report"
+                                android:textSize="15sp"
+                                android:layout_marginStart="15dp" />
                         </LinearLayout>
 
                         <ImageView
@@ -116,7 +116,8 @@
                             android:layout_marginTop="5dp"
                             android:layout_weight="1"
                             android:scaleType="fitEnd"
-                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            tools:ignore="ContentDescription" />
                     </LinearLayout>
 
 
@@ -139,9 +140,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_weight="1"
-                            android:text="Inflow"
+                            android:text="@string/inflow"
                             android:textColor="@color/black"
-                            android:textSize="15dp" />
+                            android:textSize="15sp"
+                            android:layout_marginStart="20dp" />
 
                         <TextView
                             android:id="@+id/number1"
@@ -150,9 +152,11 @@
                             android:layout_marginRight="20dp"
                             android:layout_weight="1"
                             android:gravity="right"
-                            android:text="฿ 1000"
+                            android:text="@string/_1000"
                             android:textColor="@color/sky"
-                            android:textSize="15dp" />
+                            android:textSize="15sp"
+                            android:layout_marginEnd="20dp"
+                            tools:ignore="RtlHardcoded" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -165,9 +169,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_weight="1"
-                            android:text="outflow"
+                            android:text="@string/outflow"
                             android:textColor="@color/black"
-                            android:textSize="15dp" />
+                            android:textSize="15sp"
+                            android:layout_marginStart="20dp" />
 
                         <TextView
                             android:id="@+id/number2"
@@ -176,9 +181,11 @@
                             android:layout_marginRight="20dp"
                             android:layout_weight="1"
                             android:gravity="right"
-                            android:text="฿ 20"
+                            android:text="@string/_20"
                             android:textColor="@color/red"
-                            android:textSize="15dp" />
+                            android:textSize="15sp"
+                            android:layout_marginEnd="20dp"
+                            tools:ignore="RtlHardcoded" />
                     </LinearLayout>
 
                     <TextView
@@ -187,7 +194,8 @@
                         android:layout_gravity="right"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:background="@color/gray" />
+                        android:background="@color/gray"
+                        tools:ignore="RtlHardcoded" />
                     <TextView
                         android:id="@+id/number3"
                         android:layout_width="180dp"
@@ -196,17 +204,18 @@
                         android:layout_marginRight="20dp"
                         android:layout_marginBottom="10dp"
                         android:gravity="right"
-                        android:text="฿ 980"
+                        android:text="@string/_980"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="20sp"
+                        tools:ignore="RtlHardcoded" />
                 </LinearLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerview"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
             </LinearLayout>
-        </ScrollView>
+
+        <ListView
+            android:id="@+id/daily_Lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -218,7 +227,9 @@
         android:layout_marginRight="21dp"
         android:layout_marginBottom="10dp"
         android:src="@drawable/ic_add_black_24dp"
-        app:fabSize="normal" />
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp" />
 </RelativeLayout>
 
 

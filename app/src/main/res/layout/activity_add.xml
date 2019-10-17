@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".AddActivity">
 
-
     <LinearLayout
         android:id="@+id/food_add"
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <ImageView
-            android:layout_marginLeft="20dp"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="50dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/food"
             android:layout_marginStart="20dp"
-            tools:ignore="NestedWeights,RtlSymmetry"
-            android:paddingStart="50dp" />
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/food"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
-            android:text="อาหาร"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/food"
             android:textColor="#000000 "
-            android:textSize="25dp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -45,20 +44,23 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="50dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/shop" />
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/shop"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ช็อปปิ้ง"
+            android:layout_weight="1"
+            android:text="@string/shoppie"
             android:textColor="@color/black"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -70,20 +72,23 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:paddingLeft="50dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/car" />
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/car"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ค่ารถค่าน้ำมัน"
+            android:layout_weight="1"
+            android:text="@string/car"
             android:textColor="@color/black"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -95,20 +100,23 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="50dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ss" />
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/ss"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ครอบครัว"
+            android:layout_weight="1"
+            android:text="@string/family"
             android:textColor="#000000 "
-            android:textSize="25dp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -120,20 +128,24 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
-            android:paddingLeft="50dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
             android:gravity="left"
-            android:src="@drawable/telephot" />
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/telephot"
+            tools:ignore="ContentDescription,NestedWeights,RtlHardcoded,RtlSymmetry" />
+
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ค่าโทรศัพท์"
+            android:layout_weight="1"
+            android:text="@string/tel"
             android:textColor="#000000 "
-            android:textSize="25dp"/>
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -145,47 +157,50 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="50dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/game" />
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/game"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ค่าเกมส์"
+            android:layout_weight="1"
+            android:text="@string/game"
             android:textColor="#000000 "
-            android:textSize="25dp"/>
+            android:textSize="25sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/room_add"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_marginBottom="10dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="50dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/room"
             android:layout_marginStart="20dp"
-            tools:ignore="NestedWeights,RtlSymmetry"
-            android:paddingStart="50dp" />
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/room"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="ค่าที่พัก"
+            android:layout_weight="1"
+            android:text="@string/room"
             android:textColor="#000000 "
             android:textSize="25sp" />
     </LinearLayout>
@@ -194,27 +209,28 @@
         android:id="@+id/revenue_add"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:layout_marginBottom="20dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="50dp"
-            android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/room" />
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:src="@drawable/room"
+            tools:ignore="ContentDescription,NestedWeights,RtlSymmetry" />
 
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="รายรับ"
+            android:layout_weight="1"
+            android:text="@string/revesu"
             android:textColor="#000000 "
             android:textSize="25sp" />
     </LinearLayout>
-
-
 </LinearLayout>

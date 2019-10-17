@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:layout_height="wrap_content">
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_marginTop ="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@color/write"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,41 +24,50 @@
                 android:id="@+id/date_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="26"
+                android:text="@string/_26"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/date_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Today"
-                    android:textSize="16sp"
-                    android:textColor="@color/black" />
+                    android:text="@string/today"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
                 <TextView
                     android:id="@+id/date_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="September 2019"
-                    android:textSize="11sp" />
+                    android:text="@string/september_2019"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/price_total"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="right"
                 android:paddingTop="15dp"
-                android:textSize="15dp"
-                android:textColor="@color/black"
                 android:paddingRight="20dp"
-                android:text="฿ 40" />
+                android:text="@string/_20"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -68,38 +78,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
 
             <ImageView
                 android:id="@+id/img"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="68dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/namefoods"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:text="คาเฟ่"
+                android:layout_weight="2"
+                android:text="@string/family"
                 android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/price"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="match_parent"
+                android:layout_weight="2"
                 android:gravity="right"
                 android:paddingTop="15dp"
                 android:paddingRight="25dp"
-                android:text="฿ 40"
+                android:text="@string/_20"
                 android:textColor="@color/red"
-                android:textSize="15dp" />
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
         </LinearLayout>
     </LinearLayout>
 
